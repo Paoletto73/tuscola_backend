@@ -64,7 +64,6 @@ def elencoEventi():
     cursor = connection.cursor(dictionary=True)
 
     if idUtente =="":
-        print(f"QUA 1")
         strsql = "SELECT idEvento,titolo,descrizione,prezzo,dataEvento,convert(oraEvento,CHAR) as strOraEvento, convert(numeroPosti,CHAR) as strNumeroPosti,imglink FROM eventi where dataEvento >= CURRENT_DATE()"
 
         # nel caso stiamo ricercando un evento specifico inseriamo un ulteriore where sul titolo dell evento
@@ -78,7 +77,6 @@ def elencoEventi():
             params.append(f"{idEvento}")
 
     else:
-        print(f"QUA 2")
         strsql = "SELECT idEvento,titolo,descrizione,prezzo,dataEvento,convert(oraEvento,CHAR) as strOraEvento, convert(numeroPosti,CHAR) as strNumeroPosti,imglink,convert(prenotazioni.numeroPrenotati,CHAR) as strNumeroPrenotati FROM eventi join prenotazioni on eventi.idEvento = prenotazioni.FKidEvento where dataEvento >= CURRENT_DATE() and prenotazioni.FKidUtente = %s"
         params.append(f"{idUtente}")
 
