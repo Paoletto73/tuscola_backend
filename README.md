@@ -3,10 +3,6 @@ Project Work L31 Informatica per le aziende digitali Backend
 
 Queste instruzioni sono preparate per installare un piccolo ambiente di sviluppo su di un sistema operativo Windows
 
-## DIAGRAMMA ER 
-
-Nel repository è presente il Diagramma ER del Database docs/ERDiagram.pdf
-
 Per l'installazione del Backend si può procedere con i seguenti passi:
 
 ## APACHE E MYSQL
@@ -66,7 +62,7 @@ Importare, utilizzando la console di xampp http://localhost/phpmyadmin/ il dump 
 
 Impostare, nelle prime righe (17-21) del file tucola_api.py il corretto utente di db DB_USER, DB_PASSWORD :
 
-```
+```python
         connection = mysql.connector.connect(
             host='localhost',
             database='tuscola_mngt',
