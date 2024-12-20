@@ -26,38 +26,39 @@ Installare le seguenti dipendenza python direttamente dal prompt dei comandi
 # Flask
 L’installazione avviene attraverso il comando Python da prompt dei comandi:
 
-'''bash
+```bash
 pip install Flask
-'''
+```
 
 # Flask-CORS
 L’installazione avviene attraverso il comando Python da prompt dei comandi:
 
-'''bash
+```bash
 pip install -U flask-cors
-'''
+```
 
 # MySQL Connector
 L’installazione avviene attraverso il comando Python da prompt dei comandi:
 
-'''bash
+```bash
 pip install mysqlconnector
+
 pip install mysql-connector-python
-'''
+```
 
 # Bcrypt
 L’installazione avviene attraverso il comando Python da prompt dei comandi:
 
-'''bash
+```bash
 pip install bcrypt
-'''
+```
 
 # Datetime
 L’installazione avviene attraverso il comando Python da prompt dei comandi:
 
-'''bash
+```bash
 pip install datetime
-'''
+```
 
 ## DATABASE
 
@@ -65,13 +66,13 @@ Importare, utilizzando la console di xampp http://localhost/phpmyadmin/ il dump 
 
 Impostare, nelle prime righe (17-21) del file tucola_api.py il corretto utente di db DB_USER, DB_PASSWORD :
 
-'''
+```
         connection = mysql.connector.connect(
             host='localhost',
             database='tuscola_mngt',
             user='DB_USER',
             password='DB_PASSWORD'
-'''
+```
 
 ## TEST
 
@@ -81,9 +82,9 @@ Posizionare il contenuto del repository (cartella python) in una directory del d
 
 lanciare l'app tuscola_api con il seguente comando:
 
-'''bash
+```bash
 python tuscola_api.py
-'''
+```
 
 ## DOCUMENTAZIONE
 
