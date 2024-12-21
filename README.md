@@ -67,7 +67,7 @@ Impostare, nelle prime righe (17-21) del file tucola_api.py il corretto utente d
             host='localhost',
             database='tuscola_mngt',
             user='DB_USER',
-            password='DB_PASSWORD'
+            password='DB_PASSWORD')
 ```
 
 ## TEST
@@ -86,6 +86,12 @@ python tuscola_api.py
 
 [Diagramma ER](https://github.com/Paoletto73/tuscola_backend/blob/main/docs/ERDiagram.pdf)
 
+[Diagramma UML Casi d'uso](https://github.com/Paoletto73/tuscola_backend/blob/main/docs/UMLcaseuse.pdf)
+
+[Diagramma UML Attività](https://github.com/Paoletto73/tuscola_backend/blob/main/docs/UMLactivity.pdf)
+
 [Dump Database](https://github.com/Paoletto73/tuscola_backend/blob/main/docs/tuscola_mngt.sql)
+
+
 
 
