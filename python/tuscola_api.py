@@ -201,7 +201,7 @@ def modificaPrenotazione(idPrenotazione):
     data = request.get_json()
 
     idEvento = data.get('idEvento')
-    idUtente = data.get('idUtente')
+    #idUtente = data.get('idUtente')
     numeroPrenotati = data.get('numeroPrenotati')
     note = data.get('Note')
     prezzo = data.get('Prezzo')
